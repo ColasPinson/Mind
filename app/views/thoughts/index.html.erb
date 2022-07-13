@@ -1,0 +1,11 @@
+<h1>Welcome in my mind</h1>
+
+<ul>
+    <% @thoughts.each do |thought| %>
+        <li>
+            <%= link_to thought.title, thought%>
+        </li>
+    <% end %>
+</ul>
+
+<%= link_to "New Thought", new_thought_path %>
